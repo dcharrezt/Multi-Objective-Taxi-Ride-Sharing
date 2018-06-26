@@ -1,0 +1,96 @@
+
+\documentclass{beamer}
+
+% \usetheme{Frankfurt}
+\usetheme{Malmoe}
+
+
+\title{Multi-Objective taxi ride sharing}
+
+\author{Diego D. Charrez Ticona\inst{1}}
+
+\institute[National University of St Agustin]
+{
+  \inst{1}%
+  Department of Computer Science\\
+  National University of St Agustin
+}
+
+\date{Bioinspired Computing, 2018}
+
+\subject{Bioinspired Computing}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+
+\section{Introduction}
+
+\subsection{Problem}
+
+\begin{frame}{}{}
+  \begin{itemize}
+  \item { The problem models this situation }
+  \item { Extracts the eigenvectors with with the largest eigenvalues (PCA). }
+  \item { Remap those vectors in a new space. }
+  \end{itemize}
+  
+  \begin{figure}
+      \centering
+      \includegraphics[scale=0.5]{imgs/spectral_clus_1.png}
+      \caption{Spectral Clustering}
+      \label{fig:my_label}
+  \end{figure}
+\end{frame}
+
+
+
+
+
+% All of the following is optional and typically not needed. 
+\appendix
+\section<presentation>*{\appendixname}
+\subsection<presentation>*{For Further Reading}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{For Further Reading}
+    
+  \begin{thebibliography}{10}
+    
+  \beamertemplatebookbibitems
+  % Start with overview books.
+
+  \bibitem{Author1990}
+    A.~Author.
+    \newblock {\em Handbook of Everything}.
+    \newblock Some Press, 1990.
+ 
+    
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+
+  \bibitem{Someone2000}
+    S.~Someone.
+    \newblock On this and that.
+    \newblock {\em Journal of This and That}, 2(1):50--100,
+    2000.
+  \end{thebibliography}
+\end{frame}
+
+\end{document}
+
+
