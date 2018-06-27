@@ -38,7 +38,7 @@
 \end{frame}
 
 
-\section{Introduction}
+\section{Introduction} %----------------------------------------
 
 \subsection{Problem}
 
@@ -51,7 +51,7 @@
   \end{itemize}
 \end{frame}
 
-
+\subsection{Restrictions}
 \begin{frame}{Restrictions}{}
   \begin{itemize}
   \item { Each taxis has a limited number of passengers. }
@@ -61,13 +61,39 @@
   \end{itemize}
 \end{frame}
 
-
+\subsection{Example}
 \begin{frame}{Example}{}
 The objective is to minimize the total cost of all passengers and the perceived delay by the passengers to arrive to their destinations:
   \begin{figure}
       \centering
       \includegraphics[scale=0.36]{imgs/example.png}
       \caption{Taxi ride sharing}
+      \label{fig:example}
+  \end{figure}
+\end{frame}
+
+\section{Implementation} %----------------------------------------
+
+\subsection{Input values}
+\begin{frame}{Input values}{}
+\begin{itemize}
+    \item Number of passengers.
+    \item An array with indicating if a passenger is able to wait.
+    \item An array of taxis with their capacities.
+    \item Initial cost.
+    \item Cost's matrix between all points.
+    \item Traveled time's matrix between all points.
+\end{itemize}
+\end{frame}
+
+\subsection{Codification}
+\begin{frame}{Codification}{}
+Passengers between zeros represent that are in the same taxi.
+  \begin{figure}
+      \centering
+      \includegraphics[scale=0.36]{imgs/codification.png}\\[-1ex]
+       {\tiny Source: Multiobjective taxi sharing optimization using the NSGA-II evolutionary algorithm }
+      \caption{Representation of taxi ride sharing problem}
       \label{fig:example}
   \end{figure}
 \end{frame}
@@ -94,11 +120,10 @@ The objective is to minimize the total cost of all passengers and the perceived 
   \beamertemplatearticlebibitems
   % Followed by interesting articles. Keep the list short. 
 
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
+  \bibitem{Multiobjective evolutionary algorithms for the taxi sharing problem}
+    Massobrio, Renzo
+    \newblock {\em International Journal of Metaheuristics}, 5(1):67--90,
+    2016.
   \end{thebibliography}
 \end{frame}
 
