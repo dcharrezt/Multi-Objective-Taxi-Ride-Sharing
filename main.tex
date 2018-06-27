@@ -16,9 +16,9 @@
   National University of St Agustin
 }
 
-\date{Bioinspired Computing, 2018}
+\date{Bio-inspired Computing, 2018}
 
-\subject{Bioinspired Computing}
+\subject{Bio-inspired Computing}
 
 \AtBeginSubsection[]
 {
@@ -42,26 +42,37 @@
 
 \subsection{Problem}
 
-\begin{frame}{}{}
+\begin{frame}{Problem}{}
+    The problem models this situation:
   \begin{itemize}
-  \item { The problem models this situation }
-  \item { Extracts the eigenvectors with with the largest eigenvalues (PCA). }
-  \item { Remap those vectors in a new space. }
+  \item { N people are located in the same origin. }
+  \item { They decide to ride to different location sharing taxis. }
+  \item { Taxi assignment must be done in order to minimize the total cost of the passengers. }
   \end{itemize}
-  
+\end{frame}
+
+
+\begin{frame}{Restrictions}{}
+  \begin{itemize}
+  \item { Each taxis has a limited number of passengers. }
+  \item { The max number of taxis to N passengers is N }
+  \item { Cost is given by the initial cost and the distance traveled. }
+  \item { Each taxi has a limited number of passengers. }
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Example}{}
+The objective is to minimize the total cost of all passengers and the perceived delay by the passengers to arrive to their destinations:
   \begin{figure}
       \centering
-      \includegraphics[scale=0.5]{imgs/spectral_clus_1.png}
-      \caption{Spectral Clustering}
-      \label{fig:my_label}
+      \includegraphics[scale=0.36]{imgs/example.png}
+      \caption{Taxi ride sharing}
+      \label{fig:example}
   \end{figure}
 \end{frame}
 
 
-
-
-
-% All of the following is optional and typically not needed. 
 \appendix
 \section<presentation>*{\appendixname}
 \subsection<presentation>*{For Further Reading}
